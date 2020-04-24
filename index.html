@@ -1,0 +1,411 @@
+
+<!doctype html>
+
+<html lang="en"> 
+    <head>   
+        <meta charset="utf-8">
+        <meta name="theme-color" content="black"/>
+        <title>Reenit for TaTS</title> 
+        <link rel="manifest" href="/manifest.json">
+        <link rel="stylesheet" href="css/style.css">
+        
+        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- For buttons -->
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body class="fullscreen">
+
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+            <a href="#home" class="active">REENIT for TaTS</a>
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
+                <a href="javascript:menuInstall();">Asenna</a>
+                <a href="javascript:menuReset();">Resetoi</a>
+                <a href="javascript:menuInfo();">Info</a>
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+        <!-- Extra lines to prevent content disappearing underneath the navigation menu... -->
+        <br id="alku">
+        <br>
+
+        <!-- Top of the page texts -->
+        <div  style="text-align:center;">   
+            <h4>TaTS kilpavalmennus</h4>
+            <h4>Oheisharjoittelu 16.4.-10.5.2020</h4>
+            <h5 id="date"></h5>
+        </div>
+
+        <!-- THE LIST -->
+        <!-- Week 1 -->
+        <ul style="list-style-type:square;font-size:large;background-color:#DCDCDC;">
+            <li>To 16.4.
+                <ul>
+                    <li><a href="#lampo">Alkulämmittely</a></li>
+                    <li><a href="#nop-keski">Nopeus + keskivartalo</a></li>
+                </ul>
+            </li>
+            <li>Pe 17.4.
+                <ul>
+                    <li>Kestävyys: peruskestävyyslenkki 45-60min</li>
+                </ul>
+            </li>
+            <li>La 18.4.
+                <ul>
+                    <li><a href="#lampo">Alkulämmittely</a></li>
+                    <li><a href="#lihas-voima">Lihaskunto / voimaharjoitus</a></li>
+                </ul>
+            </li>
+            <li>Su 19.4.
+                <ul>
+                    <li>Lepo &#x1F643;</li>
+                </ul>
+            </li>
+        </ul>
+
+        <!-- Week 2 -->
+        <ul style="list-style-type:square;font-size:large;background-color:#DCDCDC;">
+            <li>Ma 20.4.
+                <ul>
+                    <li><a href="#lampo">Alkulämmittely</a></li>
+                    <li><a href="#nop-keski">Nopeus + keskivartalo</a></li>
+                </ul>
+            </li>
+            <li>Ti 21.4.
+                <ul>
+                    <li><a href="#lampo">Alkulämmittely</a></li>
+                    <li><a href="#nop-kest">Nopeuskestävyys</a></li>
+                </ul>
+            </li>
+            <li>Ke 22.4.
+                <ul>
+                    <li><a href="#lampo">Alkulämmittely</a></li>
+                    <li><a href="#lihas-voima">Lihaskunto / voimaharjoitus</a></li>
+               </ul>
+            </li>
+            <li>To 23.4.
+                <ul>
+                    <li>Lepo &#x1F643;</li>
+                </ul>
+            </li>
+            <li>Pe 24.4.
+                <ul>
+                    <li><a href="#lampo">Alkulämmittely</a></li>
+                    <li><a href="#nop-keski">Nopeus + keskivartalo</a></li>
+                </ul>
+            </li>
+            <li>La 25.4.
+                <ul>
+                    <li>Kestävyys: peruskestävyyslenkki 45-60min</li>
+                </ul>
+            </li>
+            <li>Su 26.4.
+                <ul>
+                    <li>Lepo &#x1F643;</li>
+                </ul>
+            </li>
+        </ul>
+
+        <!-- Week 3 -->
+        <ul style="list-style-type:square;font-size:large;background-color:#DCDCDC;">
+            <li>Ma 27.4.
+                <ul>
+                    <li><a href="#lampo">Alkulämmittely</a></li>
+                    <li><a href="#nop-keski">Nopeus + keskivartalo</a></li>
+                </ul>
+            </li>
+            <li>Ti 28.4.
+                <ul>
+                    <li><a href="#lampo">Alkulämmittely</a></li>
+                    <li><a href="#nop-kest">Nopeuskestävyys</a></li>
+                </ul>
+            </li>
+            <li>Ke 29.4.
+                <ul>
+                    <li><a href="#lampo">Alkulämmittely</a></li>
+                    <li><a href="#lihas-voima">Lihaskunto / voimaharjoitus</a></li>
+               </ul>
+            </li>
+            <li>To 30.4.
+                <ul>
+                    <li>Lepo &#x1F643;</li>
+                </ul>
+            </li>
+            <li>Pe 1.5.
+                <ul>
+                    <li><a href="#lampo">Alkulämmittely</a></li>
+                    <li><a href="#nop-keski">Nopeus + keskivartalo</a></li>
+                </ul>
+            </li>
+            <li>La 2.5.
+                <ul>
+                    <li>Kestävyys: peruskestävyyslenkki 45-60min</li>
+                </ul>
+            </li>
+            <li>Su 3.5.
+                <ul>
+                    <li>Lepo &#x1F643;</li>
+                </ul>
+            </li>
+        </ul>
+
+        <!-- Week 4 -->
+        <ul style="list-style-type:square;font-size:large;background-color:#DCDCDC;">
+            <li>Ma 4.5.
+                <ul>
+                    <li><a href="#lampo">Alkulämmittely</a></li>
+                    <li><a href="#nop-keski">Nopeus + keskivartalo</a></li>
+                </ul>
+            </li>
+            <li>Ti 5.5.
+                <ul>
+                    <li><a href="#lampo">Alkulämmittely</a></li>
+                    <li><a href="#nop-kest">Nopeuskestävyys</a></li>
+                </ul>
+            </li>
+            <li>Ke 6.5.
+                <ul>
+                    <li><a href="#lampo">Alkulämmittely</a></li>
+                    <li><a href="#lihas-voima">Lihaskunto / voimaharjoitus</a></li>
+               </ul>
+            </li>
+            <li>To 7.5.
+                <ul>
+                    <li>Lepo &#x1F643;</li>
+                </ul>
+            </li>
+            <li>Pe 8.5.
+                <ul>
+                    <li><a href="#lampo">Alkulämmittely</a></li>
+                    <li><a href="#nop-keski">Nopeus + keskivartalo</a></li>
+                </ul>
+            </li>
+            <li>La 9.5.
+                <ul>
+                    <li>Kestävyys: peruskestävyyslenkki 45-60min</li>
+                </ul>
+            </li>
+            <li>Su 10.5.
+                <ul>
+                    <li>Lepo &#x1F643;</li>
+                </ul>
+            </li>
+        </ul>
+          
+        <!-- Alkulämmittely -->
+        <br id="lampo">
+        <br>
+        <div  style="text-align:left;padding-left:0.2em;padding-right:0.2em;padding-bottom:0.2em;font-size:large;background-color: rgb(133, 226, 222);">               
+            <h3><b>Alkulämmittelyrutiini fysiikkatreeneille</b></h3>
+
+            <h4><u>Hölkkä tai hyppynaru 5-10min</u></h4>
+            <div>
+                <span>&#9733; Hypppynaruihin inspiraatiota</span>
+                <a href="https://photos.app.goo.gl/ZgPHojhqa9eLSfoDA"><img style="vertical-align:middle" src="images/icons/play-circle-regular.svg" alt="Video" width="30" height="30"></a>
+            </div>
+            
+            <h4><u>Liikkuvuus</u></h4>
+            <div>
+                <span>&#9733; Etunoja-askelkyykystä sivuaskelkyykkyyn siirtymiset x 5-6 /puoli</span>
+                <a href="https://photos.app.goo.gl/v8GQpZzEbrPfCJBC8"><img style="vertical-align:middle" src="images/icons/play-circle-regular.svg" alt="Video" width="30" height="30"></a>
+            </div>
+            <div>
+                <span>&#9733; Etunoja-askelkyykystä sivuaskelkyykkyyn siirtymiset x 5-6 /puoli</span>
+                <a href="https://photos.app.goo.gl/un5RmjjAKyFg6RKS9"><img style="vertical-align:middle" src="images/icons/play-circle-regular.svg" alt="Video" width="30" height="30"></a>
+            </div>
+            <div>
+                <span>&#9733; Askelkyykkykävely eteen ylävartalon kierrolla + polvennostolla x 10</span>
+            </div>
+            <div>
+                <span>&#9733; Aitakävely eteen ja taakse kädet niskan takana 2 x 10-20 / suunta</span>
+                <a href="https://photos.app.goo.gl/YPQT9XtALfkUb2Jo7"><img style="vertical-align:middle" src="images/icons/play-circle-regular.svg" alt="Video" width="30" height="30"></a>
+            </div>
+            <div>
+                <span>&#9733; Askelkyykyt sivulle ja ristiin x 10/puoli</span>
+                <a href="https://photos.app.goo.gl/PsTAMhWk6aSxJ8zi7"><img style="vertical-align:middle" src="images/icons/play-circle-regular.svg" alt="Video" width="30" height="30"></a>
+            </div>
+
+            <h4><u>Liikkuminen / hypyt</u></h4>
+            <div>
+                <span>&#9733; Vuorohyppely eteen 2 x 15-20m</span>
+                <a href="https://photos.app.goo.gl/cyCDvSKMNopMfeMN8"><img style="vertical-align:middle" src="images/icons/play-circle-regular.svg" alt="Video" width="30" height="30"></a>
+            </div>
+            <div>
+                <span>&#9733; Päkiähypyt neliön kulmasta kulmaan 2 x 10-20 hyppyä</span>
+                <a href="https://photos.app.goo.gl/dKqVr2A9WLc7U37E9"><img style="vertical-align:middle" src="images/icons/play-circle-regular.svg" alt="Video" width="30" height="30"></a>
+            </div>
+            <div>
+                <span>&#9733; Ristiaskeljuoksu 2 x 15-20m /suunta</span>
+                <a href="https://photos.app.goo.gl/VHNnXuy5ktHoFraj9"><img style="vertical-align:middle" src="images/icons/play-circle-regular.svg" alt="Video" width="30" height="30"></a>
+            </div>
+            <div>
+                <span>&#9733; Sivulaukat 2 x 15-20m / suunta</span>
+            </div>
+            <div>
+                <span>&#9733; Polvennostojuoksu eteen 2 x15-20m</span>
+                <a href="https://photos.app.goo.gl/mmejYb5aw2XKR6W89"><img style="vertical-align:middle" src="images/icons/play-circle-regular.svg" alt="Video" width="30" height="30"></a>
+            </div>
+            <div>
+                <span>&#9733; Luisteluloikat eteen stopilla 2 x 6 / jalka</span>
+                <a href="https://photos.app.goo.gl/p78vACozmm5VfHbq8"><img style="vertical-align:middle" src="images/icons/play-circle-regular.svg" alt="Video" width="30" height="30"></a>
+            </div>
+            <div>
+                <span>&#9733; Luisteluloikat taakse stopilla 2 x 6 / jalka</span>
+            </div>
+  
+            <div class="w3-center">
+                <div class="w3-bar">
+                    <a href="#alku" class="w3-button w3-round-large w3-border w3-light-grey w3-xlarge">&#x1F3E0;</a>
+                    <a href="#nop-kest" class="w3-button w3-round-large w3-border w3-light-grey w3-xlarge">&#x1F3C3;</a>
+                    <a href="#nop-keski" class="w3-button w3-round-large w3-border w3-light-grey w3-xlarge">&#x1F938;</a>
+                    <a href="#lihas-voima" class="w3-button w3-round-large w3-border w3-light-grey w3-xlarge">&#x1F3CB;</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Nopeuskestävyys -->
+        <br id="nop-kest">
+        <br>
+        <div  style="text-align:left;padding-left:0.2em;padding-right:0.2em;font-size:large;background-color: rgb(133, 226, 222);">               
+            <h3><b>Nopeuskestävyys</b></h3>
+
+            <h4><u>Kestävyysharjoitus (ylämäki tai treeniportaat)</u></h4>
+            <div>
+                <span>&#9733; 2 x 10 x 10-15 s spurtti 80-85% maksimivauhdista (portaissa askel jokaiselle tai joka toiselle portaalle), palautus vetojen välissä 30-50 s, sarjapalautus 3-5 min</span>
+            </div>
+            
+            <h4><u>Loppuverryttely</u></h4>
+            <div>
+                <span>&#9733; 5min hölkkää</span>
+            </div>
+            <div>
+                <span>&#9733; Samat liikkuvuusliikkeet kuin alkulämmittelyssä</span>
+            </div>
+
+            <div class="w3-center">
+                <div class="w3-bar">
+                    <a href="#alku" class="w3-button w3-round-large w3-border w3-light-grey w3-xlarge">&#x1F3E0;</a>
+                    <a href="#lampo" class="w3-button w3-round-large w3-border w3-light-grey w3-xlarge">&#x1F6B6;</a>
+                    <a href="#nop-keski" class="w3-button w3-round-large w3-border w3-light-grey w3-xlarge">&#x1F938;</a>
+                    <a href="#lihas-voima" class="w3-button w3-round-large w3-border w3-light-grey w3-xlarge">&#x1F3CB;</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Nopeus + keskivartalo -->
+        <br id="nop-keski">
+        <br>
+        <div  style="text-align:left;padding-left:0.2em;padding-right:0.2em;padding-bottom:0.2em;font-size:large;background-color: rgb(133, 226, 222);">               
+            <h3><b>Nopeus + keskivartalo</b></h3>
+
+            <h4><u>Alkulämmittelyrutiinin jälkeen lämmittelyjuoksuvetoja muutama</u></h4>
+
+            <h4><u>Nopeustreeni</u></h4>
+            <div>
+                <span>&#9733; Juoksuspurtit eteen: 4 x 10m, palautus 60-90 s</span><br>
+                <span>2-3 min palautus ennen viivajuoksuja</span>
+            </div>
+            <div>
+                <span>&#9733; Viivajuoksu 5m – 10m – 5m: x 3-4 / suunta, palautus 60-90 s, </span>
+                <a href="https://photos.app.goo.gl/Szt5K9kmXLggMZE18"><img style="vertical-align:middle" src="images/icons/play-circle-regular.svg" alt="Video" width="30" height="30"></a><br>
+                <span>2-3 min palautus ennen kahdeksikkojuoksuja</span>
+            </div>
+            <div>
+                <span>&#9733; Kahdeksikkojuoksut eri tyyleillä: x 3-4 / suunta, palautus 60-90 s</span>
+                <a href="https://photos.app.goo.gl/tWMCKgEHAz3EGDdg7"><img style="vertical-align:middle" src="images/icons/play-circle-regular.svg" alt="Video" width="30" height="30"></a>
+            </div>
+            
+            <h4><u>Keskivartalo</u></h4>
+            <div>
+                <span>&#9733; Supermieslankku: 3 x 30-45s</span>
+                <a href="https://photos.app.goo.gl/gbcaUDVNNHMktYj46"><img style="vertical-align:middle" src="images/icons/play-circle-regular.svg" alt="Video" width="30" height="30"></a>
+            </div>
+            <div>
+                <span>&#9733; Kuppipidosta supermieheksi vatsamakuulle kierähdys 3 x 5-8 / suunta</span>
+                <a href="https://www.youtube.com/watch?v=q5rSYUwA4Kc"><img style="vertical-align:middle" src="images/icons/play-circle-regular.svg" alt="Video" width="30" height="30"></a>
+            </div>
+            <div>
+                <span>&#9733; Toispuoleinen linkkuveitsi tennispallo vastakkaisen jalan ukkovarpaan ja käden etusormen välissä: 3 x 8-10/puoli</span>
+                <a href="https://photos.app.goo.gl/26sX8eKdQu99gYud9"><img style="vertical-align:middle" src="images/icons/play-circle-regular.svg" alt="Video" width="30" height="30"></a>
+            </div>
+            <div>
+                <span>&#9733; Lankkupidosta kylkilankkuun ja takaisin siirtymiset: 3 x 6-8 / puoli</span>
+                <a href="https://photos.app.goo.gl/bjQ8hx25rbv8j5Po6"><img style="vertical-align:middle" src="images/icons/play-circle-regular.svg" alt="Video" width="30" height="30"></a>
+            </div>
+            <div>
+                <span>&#9733; Karhukävely eri suuntiin 3 x 30-45 s</span>
+                <a href="https://www.youtube.com/watch?v=SJHw2nLEdL0"><img style="vertical-align:middle" src="images/icons/play-circle-regular.svg" alt="Video" width="30" height="30"></a>
+            </div>
+  
+            <div class="w3-center">
+                <div class="w3-bar">
+                    <a href="#alku" class="w3-button w3-round-large w3-border w3-light-grey w3-xlarge">&#x1F3E0;</a>
+                    <a href="#lampo" class="w3-button w3-round-large w3-border w3-light-grey w3-xlarge">&#x1F6B6;</a>
+                    <a href="#nop-kest" class="w3-button w3-round-large w3-border w3-light-grey w3-xlarge">&#x1F3C3;</a>
+                    <a href="#lihas-voima" class="w3-button w3-round-large w3-border w3-light-grey w3-xlarge">&#x1F3CB;</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lihaskunto / voimaharjoitus -->
+        <br id="lihas-voima">
+        <br>
+        <div  style="text-align:left;padding-left:0.2em;padding-right:0.2em;padding-bottom:0.2em;font-size:large;background-color: rgb(133, 226, 222);">               
+            <h3><b>Lihaskunto / voimaharjoitus</b></h3>
+
+            <h4><u>Lihaskunto / voimaharjoitus</u></h4>
+            <div>
+                <span>&#9733; 1 jalan kyykyn kehittely → Valitse alla olevan linkin videolta itsellesi sopivan haastava liike ja tee siinä ohjeistettu toistomäärä. Pyri viikkojen edetessä siirtymään haastavampiin liikkeisiin: 3-4 x 6-10/jalka</span>
+                <a href="https://photos.app.goo.gl/nWoXtwsmR8kbioa6A"><img style="vertical-align:middle" src="images/icons/play-circle-regular.svg" alt="Video" width="30" height="30"></a>
+            </div>
+            <div>
+                <span>&#9733;  1 jalan lantionnosto ponnistava jalka korokkeella TAI takareisirullaus 2- /1-jalalla (valitse taas sopivan haastava liike): 4 x 6-12/jalka</span>
+                <a href="https://photos.app.goo.gl/UuFnsoViqSzmryR79"><img style="vertical-align:middle" src="images/icons/play-circle-regular.svg" alt="Video" width="30" height="30"></a>
+            </div>
+            <div>
+                <span>&#9733; Etunojapunnerruskehittely (valitse linkin takaa videosta itsellesi sopivan haastava variaatio ja pyri viikkojen edetessä siirtymään haastavampiin): 4 x 6-10</span>
+                <a href="https://photos.app.goo.gl/T68ExMrh9sNtpZMz7"><img style="vertical-align:middle" src="images/icons/play-circle-regular.svg" alt="Video" width="30" height="30"></a>
+            </div>
+            <div>
+                <span>&#9733; Leuanveto tai käänteinen soutu 4 x 6-15 (toistomäärä riippuu voimatasoista)</span>
+                <a href="https://www.youtube.com/watch?v=XrH-Kq_Oek0"><img style="vertical-align:middle" src="images/icons/play-circle-regular.svg" alt="Video" width="30" height="30"></a>
+                <span>Ulkokuntosaleilta löytyy myös eri korkeudella olevia tankoja, joilla liikkeen voi tehdä</span>
+            </div>
+            <div>
+                <span>&#9733; Vatsamakuulla kädet yläviistosta selän taakse: 4 x 8-10</span>
+                <a href="https://photos.app.goo.gl/58Uoem2aYWSR52eH7"><img style="vertical-align:middle" src="images/icons/play-circle-regular.svg" alt="Video" width="30" height="30"></a>
+            </div>
+            <div>
+                <span>&#9733; Kylkilankku yläjalan ilmaan nostoilla 4 x 6-8/puoli</span>
+                <a href="https://www.youtube.com/watch?v=q0KMoHGsL88"><img style="vertical-align:middle" src="images/icons/play-circle-regular.svg" alt="Video" width="30" height="30"></a>
+            </div>
+            <div>
+                <span>&#9733; Hallittu linkkuveitsi tennispallo jalkaterien ja etusormien välissä 4 x 6-16</span>
+                <a href="https://photos.app.goo.gl/jPFsNP7h4iC7uUcG7"><img style="vertical-align:middle" src="images/icons/play-circle-regular.svg" alt="Video" width="30" height="30"></a>
+            </div>
+            
+            <div class="w3-center">
+                <div class="w3-bar">
+                    <a href="#alku" class="w3-button w3-round-large w3-border w3-light-grey w3-xlarge">&#x1F3E0;</a>
+                    <a href="#lampo" class="w3-button w3-round-large w3-border w3-light-grey w3-xlarge">&#x1F6B6;</a>
+                    <a href="#nop-kest" class="w3-button w3-round-large w3-border w3-light-grey w3-xlarge">&#x1F3C3;</a>
+                    <a href="#nop-keski" class="w3-button w3-round-large w3-border w3-light-grey w3-xlarge">&#x1F938;</a>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/main.js"></script>
+
+    </body>  
+</html>
