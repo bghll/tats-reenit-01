@@ -1,5 +1,6 @@
 
 {  
+    "prefer_related_applications": false,
     "name": "TaTS REENIT v01",   
     "short_name": "TaTS-Reenit-01", 
     "lang": "en-US",     
