@@ -1,5 +1,5 @@
 
-var cacheName = 'hello-pwa'; 
+var cacheName = 'tatsreenit01-01'; 
 
 var filesToCache = [
     '/',    
