@@ -1,7 +1,7 @@
 
 {  
-    "name": "Reenit Test01",   
-    "short_name": "ReenitT01", 
+    "name": "TaTS REENIT v01",   
+    "short_name": "TaTS-Reenit-01", 
     "lang": "en-US",     
     "start_url": "/index.html", 
     "display": "standalone",  
@@ -50,5 +50,5 @@
         }
       ],
     "splash_pages": null
-    }
+}
     
